@@ -15,21 +15,22 @@ public class Secretaria extends Persona{
     public Secretaria (){
     
     }
-    
-    public Secretaria (int idSec, String crr, String cts, String nmb, String ap, String d) {
-        this.idSecretaria=idSec;
-        this.correo=crr;
-        this.contraseña=cts;
-        this.nombre=nmb;
-        this.apellidos=ap;
-        this.documento=d;
+
+    public Secretaria(int idSecretaria) {
+        this.idSecretaria = idSecretaria;
+    }
+
+    public Secretaria(int idSecretaria, String correo, String contraseña, String nombre, String apellidos, String documento) {
+        super(correo, contraseña, nombre, apellidos, documento);
+        this.idSecretaria = idSecretaria;
+    }
+
+    public int getIdSecretaria() {
+        return idSecretaria;
+    }
+
+    public void setIdSecretaria(int idSecretaria) {
+        this.idSecretaria = idSecretaria;
     }
     
-public int getIdSecretaria(){
-return idSecretaria;
-}
-
-public void setIdSecretaria (int idSec){
-this.idSecretaria=idSec;
-}
 }

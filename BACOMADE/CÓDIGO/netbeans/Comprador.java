@@ -17,42 +17,42 @@ public class Comprador extends Persona{
     public Comprador (){
     
     }
-    
-    public Comprador (int idCom, String corre, String contr, String nomb,String apelli, String docum, String tel, String dir){
-    this.idComprador=idCom;
-    this.correo=corre;
-    this.contraseña=contr;
-    this.nombre=nomb;
-    this.apellidos=apelli;
-    this.documento=docum;
-    this.telefonoC=tel;
-    this.direccionC=dir;
+    public Comprador(int idComprador, String telefonoC, String direccionC) {
+        this.idComprador = idComprador;
+        this.telefonoC = telefonoC;
+        this.direccionC = direccionC;
     }
-    
-    
-    
-public int getIdComprador(){
-return idComprador;
-}
-    
-public String getTelefonoC (){
-return telefonoC;
-}
 
-public String getDireccionC (){
-return direccionC;
-}
+    public Comprador(int idComprador, String telefonoC, String direccionC, String correo, String contraseña, String nombre, String apellidos, String documento) {
+        super(correo, contraseña, nombre, apellidos, documento);
+        this.idComprador = idComprador;
+        this.telefonoC = telefonoC;
+        this.direccionC = direccionC;
+    }
 
-public void setIdComprador (int idCom){
-this.idComprador=idCom;
-}
+    public int getIdComprador() {
+        return idComprador;
+    }
 
-public void setTelefonoC (String telC){
-this.telefonoC=telC;
-}
+    public String getTelefonoC() {
+        return telefonoC;
+    }
 
-public void setDireccionC (String direcC){
-this.direccionC=direcC;
-}
+    public String getDireccionC() {
+        return direccionC;
+    }
+
+    public void setIdComprador(int idComprador) {
+        this.idComprador = idComprador;
+    }
+
+    public void setTelefonoC(String telefonoC) {
+        this.telefonoC = telefonoC;
+    }
+
+    public void setDireccionC(String direccionC) {
+        this.direccionC = direccionC;
+    }
+
 }
 

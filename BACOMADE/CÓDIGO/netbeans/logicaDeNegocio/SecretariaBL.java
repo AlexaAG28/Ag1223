@@ -5,48 +5,52 @@
  */
 package bacomade.logicaDeNegocio;
 
+import bacomade.Secretaria;
+
 /**
  *
  * @author USER
  */
 public class SecretariaBL extends PersonaBL{
-    public boolean administrar(){
+    //es más recomendable en vez del id poner una variable puede que se vaya a modificar más 
+    //de un elemento de la clase no solo el id
+    public boolean administrar(Secretaria n1){
     return true;
     }
     
-    public boolean actualizarInformacion(){
+    public boolean actualizarInformacion(Secretaria n1){
     return true;
     }
     
-    public boolean eliminarInformacion(){
+    public boolean eliminarInformacion(Secretaria n1){
     return true;
     }
     
-    public boolean modificarInformacion(){
+    public boolean modificarInformacion(Secretaria n1){
     return true;
     }
     
-    public boolean recibirNotificacionSE(){
+    public boolean recibirNotificacionSE(Secretaria n1){
     return true;
     }
     
-    public boolean verificarInformacion(){
+    public boolean verificarInformacion(Secretaria n1){
     return true;
     }
     
-    public boolean confirmarEnvio(){
+    public boolean confirmarEnvio(Secretaria n1){
     return true;
     }
     
-    public boolean recibirPago(){
+    public boolean recibirPago(Secretaria n1){
     return true;
     }
     
-    public boolean enviarPartida(){
+    public boolean enviarPartida(Secretaria n1){
     return true;
     }
     
-    public boolean pagarMensajero(){
+    public boolean pagarMensajero(Secretaria n1){
     return true;
     }
 

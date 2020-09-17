@@ -5,6 +5,8 @@
  */
 package bacomade;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author USER
@@ -14,47 +16,67 @@ int idIglesia;
 String nombreI;
 String municipio;
 String direccionI;
+ArrayList<Partida> listaPartida; 
+ArrayList<Secretaria> listaSecretaria;
 
 public Iglesia (){
 
 }
+    public Iglesia(int idIglesia, String nombreI, String municipio, String direccionI, ArrayList<Partida> listaPartida, ArrayList<Secretaria> listaSecretaria) {
+        this.idIglesia = idIglesia;
+        this.nombreI = nombreI;
+        this.municipio = municipio;
+        this.direccionI = direccionI;
+        this.listaPartida = listaPartida;
+        this.listaSecretaria = listaSecretaria;
+    }
+    
+    public int getIdIglesia() {
+        return idIglesia;
+    }
 
-public Iglesia (int idIg, String nomI, String muni, String dire){
-this.idIglesia=idIg;
-this.nombreI=nomI;
-this.municipio=muni;
-this.direccionI=dire;
-}
+    public String getNombreI() {
+        return nombreI;
+    }
 
-public int getIdIglesia(){
-return idIglesia;
-}
+    public String getMunicipio() {
+        return municipio;
+    }
 
-public String getNombreI(){
-return nombreI;
-}
+    public String getDireccionI() {
+        return direccionI;
+    }
 
-public String getMunicipio(){
-return municipio;
-}
+    public ArrayList<Partida> getListaPartida() {
+        return listaPartida;
+    }
+    
+    public ArrayList<Secretaria> getListaSecretaria() {
+    return listaSecretaria;
+    }
 
-public String getDireccionI(){
-return direccionI;
-}
+    public void setIdIglesia(int idIglesia) {
+        this.idIglesia = idIglesia;
+    }
 
-public void setIdIglesia(int idIgle){
-this.idIglesia= idIgle;
-}
+    public void setNombreI(String nombreI) {
+        this.nombreI = nombreI;
+    }
 
-public void setNombreI (String nombreIgle){
-this.nombreI=nombreIgle;
-}
+    public void setMunicipio(String municipio) {
+        this.municipio = municipio;
+    }
 
-public void setMunicipio (String nMunicipio){
-this.municipio=nMunicipio;
-}
+    public void setDireccionI(String direccionI) {
+        this.direccionI = direccionI;
+    }
 
-public void setDireccionI (String direccionIgle){
-this.direccionI=direccionIgle;
-} 
+    public void setListaPartida(ArrayList<Partida> listaPartida) {
+        this.listaPartida = listaPartida;
+    }
+
+    public void setListaSecretaria(ArrayList<Secretaria> listaSecretaria) {
+        this.listaSecretaria = listaSecretaria;
+    }
+
 }

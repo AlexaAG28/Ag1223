@@ -23,8 +23,8 @@ public class Datos {
         System.out.println("Nombre de la iglesia: " +goretti.getNombreI());
     
         //con elementos en el constructor
-    Secretaria n2 = new Secretaria (1, "luciamz@gmail.com", "1234567", "Lucia", "Mesa Zapata", "Cl 65 63 B 13");
-    System.out.println(n2.getNombre());
+    Secretaria n1 = new Secretaria (1, "luciamz@gmail.com", "1234567", "Lucia", "Mesa Zapata", "Cl 65 63 B 13");
+    System.out.println(n1.getNombre());
     
     }
 }

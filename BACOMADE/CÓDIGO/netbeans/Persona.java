@@ -20,14 +20,14 @@ public class Persona {
 public Persona (){
 
 }
-
-public Persona (String cor, String con, String nomb, String apel,String docu){
-this.correo=cor;
-this.contraseña=con;
-this.nombre=nomb;
-this.apellidos=apel;
-this.documento=docu;
-}   //
+    public Persona(String correo, String contraseña, String nombre, String apellidos, String documento) {
+        this.correo = correo;
+        this.contraseña = contraseña;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.documento = documento;
+    }
+  //
 
 //get es obtener, él devuelve    
 public String getCorreo(){
@@ -52,23 +52,25 @@ return documento;
 
 //void significa vacío
 //set es enviar, pero no devuelve
-public void setCorreo (String corr){
-this.correo=corr;
-}
 
-public void setContraseña (String cont){
-this.contraseña=cont;
-}
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
 
-public void setNombre (String nom){
-this.nombre=nom;
-}
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
 
-public void setApellidos (String ape){
-this.apellidos=ape;
-}
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-public void setDocumento (String doc) {
-this.documento=doc;
-}
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public void setDocumento(String documento) {
+        this.documento = documento;
+    }
+
 }
