@@ -15,6 +15,17 @@ String nombreI;
 String municipio;
 String direccionI;
 
+public Iglesia (){
+
+}
+
+public Iglesia (int idIg, String nomI, String muni, String dire){
+this.idIglesia=idIg;
+this.nombreI=nomI;
+this.municipio=muni;
+this.direccionI=dire;
+}
+
 public int getIdIglesia(){
 return idIglesia;
 }

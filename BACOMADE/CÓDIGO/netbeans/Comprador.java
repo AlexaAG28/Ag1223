@@ -14,6 +14,23 @@ public class Comprador extends Persona{
     String telefonoC;
     String direccionC;
     
+    public Comprador (){
+    
+    }
+    
+    public Comprador (int idCom, String corre, String contr, String nomb,String apelli, String docum, String tel, String dir){
+    this.idComprador=idCom;
+    this.correo=corre;
+    this.contraseña=contr;
+    this.nombre=nomb;
+    this.apellidos=apelli;
+    this.documento=docum;
+    this.telefonoC=tel;
+    this.direccionC=dir;
+    }
+    
+    
+    
 public int getIdComprador(){
 return idComprador;
 }

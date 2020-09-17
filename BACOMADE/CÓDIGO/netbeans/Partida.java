@@ -2,7 +2,7 @@
 package bacomade;
 
 
-public class PARTIDA {
+public class Partida {
     int IDPartida;
     String Tipo;
     String FechaCreada;

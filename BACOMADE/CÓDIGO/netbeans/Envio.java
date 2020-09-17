@@ -1,7 +1,7 @@
 
 package bacomade;
 
-public class BACOMADE {
+public class Envio {
     int IDEnvio;
     String FechaEnvio;
     

@@ -16,6 +16,20 @@ public class Persona {
     String apellidos;
     String documento;
 
+    //estos son costructores
+public Persona (){
+
+}
+
+public Persona (String cor, String con, String nomb, String apel,String docu){
+this.correo=cor;
+this.contraseña=con;
+this.nombre=nomb;
+this.apellidos=apel;
+this.documento=docu;
+}   //
+
+//get es obtener, él devuelve    
 public String getCorreo(){
 return correo;
 }
@@ -36,6 +50,8 @@ public String getDocumento(){
 return documento;
 }
 
+//void significa vacío
+//set es enviar, pero no devuelve
 public void setCorreo (String corr){
 this.correo=corr;
 }

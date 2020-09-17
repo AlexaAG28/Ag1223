@@ -8,7 +8,7 @@
  *
  * @author Alexa AG
  */
-public class Bacomade {
+public class formaPago {
    int Idpago;
    String nombreFP;
    String totalapagar;
