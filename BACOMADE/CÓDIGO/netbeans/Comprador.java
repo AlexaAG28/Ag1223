@@ -10,13 +10,14 @@ package bacomade;
  * @author USER
  */
 public class Comprador extends Persona{
-    int idComprador;
-    String telefonoC;
-    String direccionC;
+    private int idComprador;
+    private String telefonoC;
+    private String direccionC;
     
     public Comprador (){
     
     }
+
     public Comprador(int idComprador, String telefonoC, String direccionC) {
         this.idComprador = idComprador;
         this.telefonoC = telefonoC;
@@ -34,25 +35,25 @@ public class Comprador extends Persona{
         return idComprador;
     }
 
-    public String getTelefonoC() {
-        return telefonoC;
-    }
-
-    public String getDireccionC() {
-        return direccionC;
-    }
-
     public void setIdComprador(int idComprador) {
         this.idComprador = idComprador;
+    }
+
+    public String getTelefonoC() {
+        return telefonoC;
     }
 
     public void setTelefonoC(String telefonoC) {
         this.telefonoC = telefonoC;
     }
 
+    public String getDireccionC() {
+        return direccionC;
+    }
+
     public void setDireccionC(String direccionC) {
         this.direccionC = direccionC;
     }
-
+   
 }
 

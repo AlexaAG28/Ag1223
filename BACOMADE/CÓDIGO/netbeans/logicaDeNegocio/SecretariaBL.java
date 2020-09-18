@@ -5,6 +5,7 @@
  */
 package bacomade.logicaDeNegocio;
 
+import bacomade.Envio;
 import bacomade.Secretaria;
 
 /**
@@ -46,7 +47,7 @@ public class SecretariaBL extends PersonaBL{
     return true;
     }
     
-    public boolean enviarPartida(Secretaria n1){
+    public boolean enviarPartida(Envio n1){
     return true;
     }
     

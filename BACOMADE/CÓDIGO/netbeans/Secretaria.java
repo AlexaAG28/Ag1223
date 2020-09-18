@@ -10,7 +10,7 @@ package bacomade;
  * @author USER
  */
 public class Secretaria extends Persona{
-    int idSecretaria;
+    private int idSecretaria;
 
     public Secretaria (){
     
@@ -25,6 +25,7 @@ public class Secretaria extends Persona{
         this.idSecretaria = idSecretaria;
     }
 
+    
     public int getIdSecretaria() {
         return idSecretaria;
     }
@@ -32,5 +33,6 @@ public class Secretaria extends Persona{
     public void setIdSecretaria(int idSecretaria) {
         this.idSecretaria = idSecretaria;
     }
-    
+
+
 }
