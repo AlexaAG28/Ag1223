@@ -5,17 +5,17 @@
  */
 package bacomade;
 
-import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
  * @author USER
  */
 public class PARTIDA {
-    int IDPartida;
-    String Tipo;
-    Date FechaCreada;
-    String Costo;
+private int IDPartida;
+private String Tipo;
+private Date FechaCreada;
+private String Costo;
    
     public PARTIDA() {
     }
@@ -27,38 +27,39 @@ public class PARTIDA {
         this.Costo = Costo;
     }
 
-    public int getIDPartida() {
-        return IDPartida;
-    }
-
-    public String getTipo() {
-        return Tipo;
-    }
-
-    public Date getFechaCreada() {
-        return FechaCreada;
-    }
-
     public String getCosto() {
         return Costo;
-    }
-
-    public void setIDPartida(int IDPartida) {
-        this.IDPartida = IDPartida;
-    }
-
-    public void setTipo(String Tipo) {
-        this.Tipo = Tipo;
-    }
-
-    public void setFechaCreada(Date FechaCreada) {
-        this.FechaCreada = FechaCreada;
     }
 
     public void setCosto(String Costo) {
         this.Costo = Costo;
     }
 
+    public int getIDPartida() {
+        return IDPartida;
+    }
+
+    public void setIDPartida(int IDPartida) {
+        this.IDPartida = IDPartida;
+    }
+
+    public String getTipo() {
+        return Tipo;
+    }
+
+    public void setTipo(String Tipo) {
+        this.Tipo = Tipo;
+    }
+
+    public Date getFechaCreada() {
+        return FechaCreada;
+    }
+
+    public void setFechaCreada(Date FechaCreada) {
+        this.FechaCreada = FechaCreada;
+    }
+
+    
    
 }
     

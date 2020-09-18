@@ -6,16 +6,17 @@
 package bacomade;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
  * @author USER
  */
 public class ENVIO {
-    int IDEnvio;
-    Date FechaEnvio;
-    ArrayList<PARTIDA> partida;
-    ArrayList<FORMADEPAGO> formadepago;
+private int IDEnvio;
+private Date FechaEnvio;
+private ArrayList<PARTIDA> partida;
+private ArrayList<FORMADEPAGO> formadepago;
 
     public ENVIO() {
     }
@@ -27,41 +28,39 @@ public class ENVIO {
         this.formadepago = formadepago;
     }
 
-    public int getIDEnvio() {
-        return IDEnvio;
+    public ArrayList<FORMADEPAGO> getFormadepago() {
+        return formadepago;
     }
 
-    public Date getFechaEnvio() {
-        return FechaEnvio;
+    public void setFormadepago(ArrayList<FORMADEPAGO> formadepago) {
+        this.formadepago = formadepago;
+    }
+
+    public int getIDEnvio() {
+        return IDEnvio;
     }
 
     public void setIDEnvio(int IDEnvio) {
         this.IDEnvio = IDEnvio;
     }
 
+    public Date getFechaEnvio() {
+        return FechaEnvio;
+    }
+
     public void setFechaEnvio(Date FechaEnvio) {
         this.FechaEnvio = FechaEnvio;
+    }
+
+    public ArrayList<PARTIDA> getPartida() {
+        return partida;
     }
 
     public void setPartida(ArrayList<PARTIDA> partida) {
         this.partida = partida;
     }
 
-    public void setFormadepago(ArrayList<FORMADEPAGO> formadepago) {
-        this.formadepago = formadepago;
-    }
-    
-    
-
-    public ArrayList<PARTIDA> getPartida() {
-        return partida;
-    }
-
-    public ArrayList<FORMADEPAGO> getFormadepago() {
-        return formadepago;
-    }
-
-    
+       
  
     
 }
