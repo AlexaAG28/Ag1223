@@ -5,60 +5,61 @@
  */
 package bacomade;
 
-import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
  * @author USER
  */
-public class PARTIDA {
-    int IDPartida;
-    String Tipo;
-    Date FechaCreada;
-    String Costo;
+public class Partida {
+private int idPartida;
+private String tipo;
+private Date fechaCreada;
+static private String costo;
    
-    public PARTIDA() {
+    public Partida(){
+    
     }
 
-    public PARTIDA(int IDPartida, String Tipo, Date FechaCreada, String Costo) {
-        this.IDPartida = IDPartida;
-        this.Tipo = Tipo;
-        this.FechaCreada = FechaCreada;
-        this.Costo = Costo;
+    public Partida(int idPartida, String tipo, Date fechaCreada) {
+        this.idPartida = idPartida;
+        this.tipo = tipo;
+        this.fechaCreada = fechaCreada;
     }
 
-    public int getIDPartida() {
-        return IDPartida;
+    public int getIdPartida() {
+        return idPartida;
     }
 
     public String getTipo() {
-        return Tipo;
+        return tipo;
     }
 
     public Date getFechaCreada() {
-        return FechaCreada;
+        return fechaCreada;
     }
 
-    public String getCosto() {
-        return Costo;
+    public static String getCosto() {
+        return costo;
     }
 
-    public void setIDPartida(int IDPartida) {
-        this.IDPartida = IDPartida;
+    public void setIdPartida(int idPartida) {
+        this.idPartida = idPartida;
     }
 
-    public void setTipo(String Tipo) {
-        this.Tipo = Tipo;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
-    public void setFechaCreada(Date FechaCreada) {
-        this.FechaCreada = FechaCreada;
+    public void setFechaCreada(Date fechaCreada) {
+        this.fechaCreada = fechaCreada;
     }
 
-    public void setCosto(String Costo) {
-        this.Costo = Costo;
+    public static void setCosto(String costo) {
+        Partida.costo = costo;
     }
 
-   
+  
+    
 }
     

@@ -6,63 +6,51 @@
 package bacomade;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
  * @author USER
  */
-public class ENVIO {
-    int IDEnvio;
-    Date FechaEnvio;
-    ArrayList<PARTIDA> partida;
-    ArrayList<FORMADEPAGO> formadepago;
+public class Envio {
+private int idEnvio;
+private Date fechaEnvio;
+private ArrayList<Partida> listaPartida;
 
-    public ENVIO() {
+
+    public Envio() {
+        
     }
 
-    public ENVIO(int IDEnvio, Date FechaEnvio, ArrayList<PARTIDA> partida, ArrayList<FORMADEPAGO> formadepago) {
-        this.IDEnvio = IDEnvio;
-        this.FechaEnvio = FechaEnvio;
-        this.partida = partida;
-        this.formadepago = formadepago;
+    public Envio(int idEnvio, Date fechaEnvio, ArrayList<Partida> listaPartida) {
+        this.idEnvio = idEnvio;
+        this.fechaEnvio = fechaEnvio;
+        this.listaPartida = listaPartida;
     }
 
-    public int getIDEnvio() {
-        return IDEnvio;
+    public int getIdEnvio() {
+        return idEnvio;
+    }
+
+    public void setIdEnvio(int idEnvio) {
+        this.idEnvio = idEnvio;
     }
 
     public Date getFechaEnvio() {
-        return FechaEnvio;
+        return fechaEnvio;
     }
 
-    public void setIDEnvio(int IDEnvio) {
-        this.IDEnvio = IDEnvio;
+    public void setFechaEnvio(Date fechaEnvio) {
+        this.fechaEnvio = fechaEnvio;
     }
 
-    public void setFechaEnvio(Date FechaEnvio) {
-        this.FechaEnvio = FechaEnvio;
+    public ArrayList<Partida> getListaPartida() {
+        return listaPartida;
     }
 
-    public void setPartida(ArrayList<PARTIDA> partida) {
-        this.partida = partida;
+    public void setListaPartida(ArrayList<Partida> listaPartida) {
+        this.listaPartida = listaPartida;
     }
-
-    public void setFormadepago(ArrayList<FORMADEPAGO> formadepago) {
-        this.formadepago = formadepago;
-    }
-    
-    
-
-    public ArrayList<PARTIDA> getPartida() {
-        return partida;
-    }
-
-    public ArrayList<FORMADEPAGO> getFormadepago() {
-        return formadepago;
-    }
-
-    
- 
-    
+   
 }
    

@@ -6,6 +6,7 @@
 package bacomade.logicaDeNegocio;
 
 import bacomade.Comprador;
+import bacomade.Secretaria;
 
 /**
  *
@@ -30,7 +31,7 @@ public class CompradorBL extends PersonaBL{
     return true;
     }
     
-    public boolean enviarPago(Comprador n1){
+    public boolean enviarPago(Secretaria n1){
     return true;
     }
     

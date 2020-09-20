@@ -3,64 +3,73 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package bacomade;
+
+import java.util.ArrayList;
 
 /**
  *
- * @author Alexa AG
+ * @author USER
  */
-public class Mensajero {
-     int Idmensajero;
-   String nombrem;
-   String telefono;
-   String documentom; 
-   String correo_s;
-   
-   public int getIdmensajero(){
-   return Idmensajero;
-   }
-   
-   public String getnombrem(){
-       return nombrem;
-   }
-   
-   public String gettelefono (){
-      return telefono; 
-   }
-   
-   public String getdocumentom (){
-       return documentom;
-   }
-   
-   public void setIdmensajero (int IdmensajeroAP){
-       this.Idmensajero= IdmensajeroAP;
-   }
-   
-   public void setnombrem(String nombreAP){
-       String dato;
-       this.nombrem=nombreAP;
-       dato="Pepito Perez";
-   }
-   
-   public void settelefono (String telefonoAP){
-       String dato;
-       this.telefono = telefonoAP;
-       dato="2582845";
-   }
-   
-     public void setdocumentom (String documentomAP){
-       String dato;
-       this.documentom= documentomAP;
-       dato="10467892";
-   }
-      public void setcorreo_s (String correo_sAP){
-       String dato;
-       this.correo_s= correo_sAP;
-       dato="Dora.divinaprov@arqmedellin.com";
-     
-   
-   
-}
 
-    
-    
-}
+    public class Mensajero {
+   private int idMensajero;
+   private String nombreM;
+   private String telefono;
+   private String documentoM; 
+   private ArrayList<Envio> listaEnvio;
+   
+  public Mensajero(){
+  
+  }
+
+    public Mensajero(int idMensajero, String nombreM, String telefono, String documentoM, ArrayList<Envio> listaEnvio) {
+        this.idMensajero = idMensajero;
+        this.nombreM = nombreM;
+        this.telefono = telefono;
+        this.documentoM = documentoM;
+        this.listaEnvio = listaEnvio;
+    }
+
+    public ArrayList<Envio> getListaEnvio() {
+        return listaEnvio;
+    }
+
+    public int getIdMensajero() {
+        return idMensajero;
+    }
+
+    public String getNombreM() {
+        return nombreM;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public String getDocumentoM() {
+        return documentoM;
+    }
+
+    public void setIdMensajero(int idMensajero) {
+        this.idMensajero = idMensajero;
+    }
+
+    public void setNombreM(String nombreM) {
+        this.nombreM = nombreM;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public void setDocumentoM(String documentoM) {
+        this.documentoM = documentoM;
+    }
+
+    public void setListaEnvio(ArrayList<Envio> listaEnvio) {
+        this.listaEnvio = listaEnvio;
+    }
+  
+  }
+
