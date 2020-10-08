@@ -12,10 +12,18 @@ import java.util.Date;
  * @author USER
  */
 public class Partida {
+
+    public static Double getCosto() {
+        return costo;
+    }
+
+    public static void setCosto(Double aCosto) {
+        costo = aCosto;
+    }
 private int idPartida;
 private String tipo;
 private Date fechaCreada;
-static private String costo;
+static private Double costo;
    
     public Partida(){
     
@@ -31,35 +39,25 @@ static private String costo;
         return idPartida;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public Date getFechaCreada() {
-        return fechaCreada;
-    }
-
-    public static String getCosto() {
-        return costo;
-    }
-
     public void setIdPartida(int idPartida) {
         this.idPartida = idPartida;
+    }
+
+    public String getTipo() {
+        return tipo;
     }
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 
+    public Date getFechaCreada() {
+        return fechaCreada;
+    }
+
     public void setFechaCreada(Date fechaCreada) {
         this.fechaCreada = fechaCreada;
     }
-
-    public static void setCosto(String costo) {
-        Partida.costo = costo;
-    }
-
-  
     
 }
     

@@ -15,7 +15,7 @@ import java.util.Date;
 public class formaPago {
    private int idFormaP;
    private String nombreFP;
-   private String totalPagar;
+   private Double totalPagar;
    private Date fechaPago; 
    private ArrayList<Envio> listaEnvio;
    private ArrayList<Comprador> listaComprador;
@@ -24,7 +24,7 @@ public class formaPago {
    
    }
 
-    public formaPago(int idFormaP, String nombreFP, String totalPagar, Date fechaPago, ArrayList<Envio> listaEnvio, ArrayList<Comprador> listaComprador) {
+    public formaPago(int idFormaP, String nombreFP, Double totalPagar, Date fechaPago, ArrayList<Envio> listaEnvio, ArrayList<Comprador> listaComprador) {
         this.idFormaP = idFormaP;
         this.nombreFP = nombreFP;
         this.totalPagar = totalPagar;
@@ -41,7 +41,7 @@ public class formaPago {
         return nombreFP;
     }
 
-    public String getTotalPagar() {
+    public Double getTotalPagar() {
         return totalPagar;
     }
 
@@ -65,7 +65,7 @@ public class formaPago {
         this.nombreFP = nombreFP;
     }
 
-    public void setTotalPagar(String totalPagar) {
+    public void setTotalPagar(Double totalPagar) {
         this.totalPagar = totalPagar;
     }
 
@@ -80,5 +80,7 @@ public class formaPago {
     public void setListaComprador(ArrayList<Comprador> listaComprador) {
         this.listaComprador = listaComprador;
     }
+
    
+    
 }

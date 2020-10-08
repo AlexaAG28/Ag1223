@@ -13,7 +13,7 @@ import bacomade.Secretaria;
  * @author USER
  */
 public class CompradorBL extends PersonaBL{
-    //es más recomendble en vez del id poner una variable puede que se vaya a modificar más 
+    //es más recomendable en vez del id poner una variable puede que se vaya a modificar más 
     //de un elemento de la clase no solo el id
     public boolean registrar(Comprador n1){
     return true;
